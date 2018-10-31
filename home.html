@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script src="js/navbar.js"></script>
+    <link rel="stylesheet" href="css/obj.css">
+</head>
+
+<body>
+    <div>
+        <!--顶部导航栏-->
+        <nav class="nav-img">
+            <!--导航栏-->
+            <div class="nav-container-justify navbar-fixed" id="navbar_bg">
+                <div class="navbar-bg f-left">
+                    <a href="" class="f-left"><img src="img/home/home_01.svg" alt="" id="nvabar_img"></a>
+                </div>
+                <div class="navbar-nb f-left">
+                    <ul class="list-none">
+                        <li class="active navbar-nb-li"><a href="" class="textnone">首页</a></li>
+                        <li class="navbar-d navbar-nb-li" id="navbar_li1" onmousemove=getOm() onmouseout=getOs()>产品<span
+                                class="arr">&#9660</span>
+                            <ul class="list-none navbar-ul">
+                                <li><a href="#">Matrix设备接入及应用开发平台</a></li>
+                                <li><a href="#">Genius设备管理及业务运营平台</a></li>
+                                <li><a href="#">Inspire大数据分析及应用平台</a></li>
+                            </ul>
+                        </li>
+                        <li class="navbar-d navbar-nb-li2" id="navbar_li2" onmousemove=getOm2() onmouseout=getOs2()>解决方案<span
+                                class="arr">&#9660</span>
+                            <ul class="list-none navbar-ul">
+                                <li><a href="#">智云车联云解决方案</a></li>
+                                <li><a href="#">消费级物联网云解决方案</a></li>
+                                <li><a href="#">工业级物联网云解决方案</a></li>
+                            </ul>
+                        </li>
+                        <li class="navbar-d2 navbar-nb-li2" id="navbar_li3" onmousemove=getOm3() onmouseout=getOs3()>客户案例<span
+                                class="arr">&#9660</span>
+                            <ul class="list-none navbar-ul">
+                                <li><a href="#">车联网</a></li>
+                                <li><a href="#">智能家居</a></li>
+                                <li><a href="#">医疗健康</a></li>
+                                <li><a href="#">工业物联网</a></li>
+                            </ul>
+                        </li>
+                        <li class="navbar-d2 navbar-nb-li" id="navbar_li4" onmousemove=getOm4() onmouseout=getOs4()>合作伙伴</li>
+                        <li class="navbar-d2 navbar-nb-li2" id="navbar_li5" onmousemove=getOm5() onmouseout=getOs5()>关于我们<span
+                                class="arr">&#9660</span>
+                            <ul class="list-none navbar-ul">
+                                <li><a href="">公司介绍</a></li>
+                                <li><a href="">企业荣誉</a></li>
+                                <li><a href="">人才招聘</a></li>
+                                <li><a href="">新闻报道</a></li>
+                                <li><a href="">联系我们</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="f-right navbar-lg">
+                    <ul class="list-none">
+                        <li>
+                            <a href="#" class="textnone lg-a">
+                                <img src="img/home/home_login.svg" alt="">
+                                <span id="navbar_span1">登录平台</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="textnone navbar-lg-a">
+                                申请试用
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--小页面导航栏-->
+            <div class="nav-wrapper navbar-fixed" id="navwra_bg">
+                <a href="#" class="nav-wrapper-a1"><img src="img/home/home_01.svg" alt="" id="navwra_img"></a>
+                <a href="#" class="textnone nav-wrapper-a2 f-left" style="cursor:default" onclick="setOn()">
+                    <img src="img/home/home_04.png" alt="" class="nav-wrapper-img" id="navwra_img2">
+                </a>
+            </div>
+            <!--导航底部-->
+            <div class="navbar-cen">
+            </div>
+            <div id="navbarLeft2" onclick="setOn2()">
+                </div>
+        </nav>
+        <!--左侧导航栏-->
+        <div class="navbar-left" id="navbarLeft">
+            <ul class="list-none">
+                <li class="navbar-left-li">
+                    <a href="#" class="navbar-left-a">首页</a>
+                </li>
+                <li>
+                    <ul >
+                        <li>
+                            <a href="#" onclick="onNav()" class="navbar-left-a navbar-left-li">产品</a>
+                            <div id="navbar_left1" style="height:0px" class="navbar-left-div">
+                                <ul>
+                                    <li><a href="">Matrix设备接入及应用开发平台</a></li>
+                                    <li><a href="">Genius设备管理及业务运营平台</a></li>
+                                    <li><a href="">Inspire大数据分析及应用平台</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li>
+                            <a href="#" class="navbar-left-a" onclick="onNav2()">解决方案</a>
+                            <div id="navbar_left2" style="height:0px" class="navbar-left-div">
+                                <ul>
+                                    <li><a href="#">智云车联云解决方案</a></li>
+                                    <li><a href="http://www.ablecloud.com/smarthome.html">消费级物联网云解决方案</a></li>
+                                    <li><a href="http://www.ablecloud.com/iiot.html">工业级物联网云解决方案</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li><a href="#" class="navbar-left-a" onclick="onNav3()">客户案例</a></li>
+                        <div id="navbar_left3" style="height:0px" class="navbar-left-div">
+                            <ul>
+                                <li><a href="">车联网</a></li>
+                                <li><a href="">智能家居</a></li>
+                                <li><a href="">医疗健康</a></li>
+                                <li><a href="">工业物联网</a></li>
+                            </ul>
+                        </div>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="navbar-left-a">合作伙伴</a>
+                </li>
+                <li>
+                    <ul>
+                        <li><a href="#" class="navbar-left-a" onclick="onNav4()">关于我们</a></li>
+                        <div id="navbar_left4" style="height:0px" class="navbar-left-div">
+                            <ul>
+                                <li><a href="#">公司介绍</a></li>
+                                <li><a href="#">企业荣誉</a></li>
+                                <li><a href="#">新闻报道</a></li>
+                                <li><a href="#">人才招聘</a></li>
+                            </ul>
+                        </div>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="navbar-left-a">申请试用</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+        <!--页面中部-->
+    <section class="section-top flex">
+    <div>
+
+    </div>
+    <div>
+
+    </div>
+    </section>
+</body>
+     
+</html>
