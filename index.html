@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script src="js/navbar.js"></script>
+    <link rel="stylesheet" href="css/obj.css">
+</head>
+<body>
+    <header>
+        <!--顶部导航栏-->
+        <nav class="nav-img">
+            <!--导航栏-->
+            <div class="nav-container-justify navbar-fixed" id="navbar_bg">
+                <div class="navbar-bg f-left">
+                    <a href="" class="f-left"><img src="img/home/home_01.svg" alt="" id="nvabar_img"></a>
+                </div>
+                <div class="navbar-nb f-left">
+                    <ul class="list-none">
+                        <li class="active navbar-nb-li"><a href=>首页</a></li>
+                        <li class="navbar-d navbar-nb-li" id="navbar_li1" onmousemove=getOm() onmouseout=getOs()>产品<span
+                                class="arr">&#9660</span>
+                            <ul class="list-none navbar-ul">
+                                <li><a href="#">Matrix设备接入及应用开发平台</a></li>
+                                <li><a href="#">Genius设备管理及业务运营平台</a></li>
+                                <li><a href="#">Inspire大数据分析及应用平台</a></li>
+                            </ul>
+                        </li>
+                        <li class="navbar-d navbar-nb-li2" id="navbar_li2" onmousemove=getOm2() onmouseout=getOs2()>解决方案<span
+                                class="arr">&#9660</span>
+                            <ul class="list-none navbar-ul">
+                                <li><a href="#">智云车联云解决方案</a></li>
+                                <li><a href="#">消费级物联网云解决方案</a></li>
+                                <li><a href="#">工业级物联网云解决方案</a></li>
+                            </ul>
+                        </li>
+                        <li class="navbar-d2 navbar-nb-li2" id="navbar_li3" onmousemove=getOm3() onmouseout=getOs3()>客户案例<span
+                                class="arr">&#9660</span>
+                            <ul class="list-none navbar-ul">
+                                <li><a href="#">车联网</a></li>
+                                <li><a href="#">智能家居</a></li>
+                                <li><a href="#">医疗健康</a></li>
+                                <li><a href="#">工业物联网</a></li>
+                            </ul>
+                        </li>
+                        <li class="navbar-d2 navbar-nb-li" id="navbar_li4" onmousemove=getOm4() onmouseout=getOs4()>合作伙伴</li>
+                        <li class="navbar-d2 navbar-nb-li2" id="navbar_li5" onmousemove=getOm5() onmouseout=getOs5()>关于我们<span
+                                class="arr">&#9660</span>
+                            <ul class="list-none navbar-ul">
+                                <li><a href="">公司介绍</a></li>
+                                <li><a href="">企业荣誉</a></li>
+                                <li><a href="">人才招聘</a></li>
+                                <li><a href="">新闻报道</a></li>
+                                <li><a href="">联系我们</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="f-right navbar-lg">
+                    <ul class="list-none">
+                        <li>
+                            <a href="#" class="lg-a">
+                                <img src="img/home/home_login.svg" alt="">
+                                <span id="navbar_span1">登录平台</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="navbar-lg-a">
+                                申请试用
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--小页面导航栏-->
+            <div class="nav-wrapper navbar-fixed" id="navwra_bg">
+                <a href="#" class="nav-wrapper-a1"><img src="img/home/home_01.svg" alt="" id="navwra_img"></a>
+                <a href="#" class="nav-wrapper-a2 f-left" style="cursor:default" onclick="setOn()">
+                    <img src="img/home/home_04.png" alt="" class="nav-wrapper-img" id="navwra_img2">
+                </a>
+            </div>
+            <!--导航底部-->
+            <div class="navbar-cen">
+            </div>
+            <div id="navbarLeft2" onclick="setOn2()">
+                </div>
+        </nav>
+        <!--左侧导航栏-->
+        <div class="navbar-left" id="navbarLeft">
+            <ul class="list-none">
+                <li class="navbar-left-li">
+                    <a href="#" class="navbar-left-a">首页</a>
+                </li>
+                <li>
+                    <ul >
+                        <li>
+                            <a href="#" onclick="onNav()" class="navbar-left-a navbar-left-li">产品</a>
+                            <div id="navbar_left1" style="height:0px" class="navbar-left-div">
+                                <ul>
+                                    <li><a href="">Matrix设备接入及应用开发平台</a></li>
+                                    <li><a href="">Genius设备管理及业务运营平台</a></li>
+                                    <li><a href="">Inspire大数据分析及应用平台</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li>
+                            <a href="#" class="navbar-left-a" onclick="onNav2()">解决方案</a>
+                            <div id="navbar_left2" style="height:0px" class="navbar-left-div">
+                                <ul>
+                                    <li><a href="#">智云车联云解决方案</a></li>
+                                    <li><a href="http://www.ablecloud.com/smarthome.html">消费级物联网云解决方案</a></li>
+                                    <li><a href="http://www.ablecloud.com/iiot.html">工业级物联网云解决方案</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li><a href="#" class="navbar-left-a" onclick="onNav3()">客户案例</a></li>
+                        <div id="navbar_left3" style="height:0px" class="navbar-left-div">
+                            <ul>
+                                <li><a href="">车联网</a></li>
+                                <li><a href="">智能家居</a></li>
+                                <li><a href="">医疗健康</a></li>
+                                <li><a href="">工业物联网</a></li>
+                            </ul>
+                        </div>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="navbar-left-a">合作伙伴</a>
+                </li>
+                <li>
+                    <ul>
+                        <li><a href="#" class="navbar-left-a" onclick="onNav4()">关于我们</a></li>
+                        <div id="navbar_left4" style="height:0px" class="navbar-left-div">
+                            <ul>
+                                <li><a href="#">公司介绍</a></li>
+                                <li><a href="#">企业荣誉</a></li>
+                                <li><a href="#">新闻报道</a></li>
+                                <li><a href="#">人才招聘</a></li>
+                            </ul>
+                        </div>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="navbar-left-a">申请试用</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!--页面中部-->
+    <section class="section-top t-align-c">
+    <div>
+      <p class="sectiontop-p1">帮助设备制造企业及方案商快速实现物联网化</p>
+    </div>
+    <div>
+     <p class="sectiontop-p2">支持拓展设备的数据功能、协助提升业务的精细化运营水平、助力围绕设备的商业模式创新</p>
+    </div>
+    </section>
+   <section>
+       <img src="img/home/home_06.svg" alt="X" class="secimg">
+   </section>
+   <section class="section-bg">
+       <div class="container">         
+           <h3 class="sec-classify-h3">提供物联网各环节所需的基础能力和高阶服务支持</h3>
+           <div class="row container-madding">
+            <div class="sec-classify-div t-align-c">
+                <img title="物联网设备接入及应用开发服务平台（物联网开发平台）" src="./img/home/genius-logo.svg">
+                <h4 >设备接入及应用开发平台</h4>
+                <p>
+                    Matrix提供设备快速接入及敏捷应用开发能力，通过安全稳定的云端服务保障，帮助客户轻松实现基于自身业务场景的物联网应用。
+                </p>
+                <a  href="#">了解更多</a>
+            </div>
+            <div class="sec-classify-div t-align-c">
+                <img title="物联网设备管理及运营服务平台" src="./img/home/matrix logo.svg">
+                <h4 class="ab-classify-h4">设备管理及业务运营平台</h4>
+                <p class="ab-classify-p">Genius提供可视化的设备管理及业务运营的能力，满足客户设备维保、数据统计分析等全面的运营功能，帮助实现高效的运营管理。</p>
+                <a href="#">了解更多</a>
+            </div>
+            <div class="sec-classify-div t-align-c">
+                <img title="物联网大数据分析平台" src="./img/home/inspire-logo.svg">
+                <h4>大数据分析及应用平台</h4>
+                <p>
+                    Inspire提供大数据交互式分析能力，赋能全员零编码实现自定义数据探索分析，实时结果输出助力客户进行精准决策。
+                </p>
+                <a href="#" class="">了解更多</a>
+            </div>
+        </div>
+        </div>
+   </section>
+   <section class="challenge-bg">
+    <div class="container">
+        <h2 class="challenge-h2">迎接物联网带来的全新机遇与挑战</h2>
+        <div class="row">
+         <div class="challenge-con">
+            <div class="challenge-img">
+                <img src="./img/home/shebeilianwang.svg">
+            </div>
+         </div>
+          <div class="challenge-con">
+            <div class="challenge-img">
+                <img src="./img/home/appkongzhi.svg">
+            </div>
+         </div>
+          <div class="challenge-con">
+            <div class="challenge-img">
+                <img src="./img/home/yunduanzhineng.svg">
+            </div>
+         </div>
+         <div class="challenge-con">
+            <div class="challenge-img">
+                <img src="./img/home/pingtaiduijie.svg">
+            </div>
+         </div>
+         <div class="challenge-con">
+            <div class="challenge-img">
+                <img src="./img/home/tongjifenxi.svg">
+            </div>
+         </div>
+         <div class="challenge-con">
+            <div class="challenge-img">
+                <img src="./img/home/yuanchengjianguan.svg">
+            </div>
+         </div>
+        </div>
+
+        <div class="row pd64p">
+         <div class="challenge-con">
+             <div class="challenge-text">
+                 <p class="challenge-explain">设备联网</p>
+             </div>
+         </div>
+          <div class="challenge-con">
+            <div class="challenge-text">
+                 <p class="challenge-explain">APP控制</p>
+             </div>
+         </div>
+          <div class="challenge-con">
+            <div class="challenge-text">
+                 <p class="challenge-explain">云端智能</p>
+             </div>
+         </div>
+         <div class="challenge-con">
+            <div class="challenge-text">
+                 <p class="challenge-explain">平台对接</p>
+             </div>
+         </div>
+         <div class="challenge-con">
+           <div class="challenge-text">
+                 <p class="challenge-explain">统计分析</p>
+             </div>
+         </div>
+         <div class="challenge-con">
+            <div class="challenge-text">
+                 <p class="challenge-explain">远程监管</p>
+             </div>
+         </div>
+        </div>
+
+        <div class="row">
+         <div class="challenge-con">
+            <div class="challenge-img">
+                <img src="./img/home/weibaoguanli.svg">
+            </div>
+         </div>
+          <div class="challenge-con">
+            <div class="challenge-img">
+                <img src="./img/home/shujuhuizong.svg">
+            </div>
+         </div>
+          <div class="challenge-con">
+            <div class="challenge-img">
+                <img src="./img/home/jizhigenzong.svg">
+            </div>
+         </div>
+         <div class="challenge-con">
+            <div class="challenge-img">
+                <img src="./img/home/jingzhunyingxiao.svg">
+            </div>
+         </div>
+         <div class="challenge-con">
+            <div class="challenge-img">
+                <img src="./img/home/shujuwajue.svg">
+            </div>
+         </div>
+         <div class="challenge-con">
+            <div class="challenge-img">
+                <img src="./img/home/moxingjiance.svg">
+            </div>
+         </div>
+        </div>
+         <div class="row pd42p">
+         <div class="challenge-con">
+             <div class="challenge-text">
+                 <p class="challenge-explain">维保管理</p>
+             </div>
+         </div>
+          <div class="challenge-con">
+            <div class="challenge-text">
+                 <p class="challenge-explain">数据汇总</p>
+             </div>
+         </div>
+          <div class="challenge-con">
+            <div class="challenge-text">
+                 <p class="challenge-explain">机制跟踪</p>
+             </div>
+         </div>
+         <div class="challenge-con">
+            <div class="challenge-text">
+                 <p class="challenge-explain">精准营销</p>
+             </div>
+         </div>
+         <div class="challenge-con">
+           <div class="challenge-text">
+                 <p class="challenge-explain">数据挖掘</p>
+             </div>
+         </div>
+         <div class="challenge-con">
+            <div class="challenge-text">
+                 <p class="challenge-explain">模型检测</p>
+             </div>
+         </div>
+        </div>
+     </div>
+   </section>
+   <section class="world-img">
+       <img src="./img/home/dimian.svg" alt="">
+   </section>
+   <section class="world-circle-bg -on-med-and-down">
+    <div class="container">
+        <h2 class="energize-h2 -on-med-and-down">充分赋能企业</h2>
+        <div class="row">
+            <div class="square-con " target="energize-item1" tag="triangle-item1" text="text-item1">
+                <span class="energize-circle">
+                    <div class="energize-img energize-white" style="display: block;">
+                        <img title="稳定支持物联网服务业务" src="./img/home/wendingzhichi.svg">
+                    </div>
+                    <div class="energize-img energize-red" style="display: none;">
+                        <img title="稳定支持物联网服务业务" src="./img/home/wendingzhichi-hover.svg">
+                    </div>		
+                </span>
+            </div>
+            
+            <div class="square-con " target="energize-item2" tag="triangle-item2" text="text-item2">
+                <span class="energize-circle">
+                    <div class="energize-img energize-white">
+                        <img title="可视化物联网设备运营管理工具" src="./img/home/gaoxiaojingying.svg">
+                    </div>
+                    <div class="energize-img energize-red" style="display: none;">
+                        <img title="可视化物联网设备运营管理工具" src="./img/home/gaoxiaojingying-hover.svg">
+                    </div>		
+                </span>
+            </div>
+
+            <div class="square-con " target="energize-item3" tag="triangle-item3" text="text-item3">
+                <span class="energize-circle">
+                    <div class="energize-img energize-white" style="display: block;">
+                        <img title="物联网大数据将深刻引领企业创新和进步" src="./img/home/shujujuece.svg">
+                    </div>
+                    <div class="energize-img energize-red" style="display: none;">
+                        <img title="物联网大数据将深刻引领企业创新和进步" src="./img/home/shujujuece-hover.svg">
+                    </div>		
+                </span>
+            </div>
+
+            <div class="square-con " target="energize-item4" tag="triangle-item4" text="text-item4">
+                <span class="energize-circle">
+                    <div class="energize-img energize-white" style="display: block;">
+                        <img title="多方协作和数据共享，实现物联化、信息化、智能化" src="./img/home/yanjianghezuo.svg">
+                    </div>
+                    <div class="energize-img energize-red" style="display: none;">
+                        <img title="多方协作和数据共享，实现物联化、信息化、智能化" src="./img/home/yanjianghezuo-hover.svg">
+                    </div>		
+                </span>
+            </div>
+
+            <div class="square-con " target="energize-item5" tag="triangle-item5" text="text-item5">
+                <span class="energize-circle">
+                    <div class="energize-img energize-white">
+                        <img src="./img/home/zhishichanquan.svg">
+                    </div>
+                    <div class="energize-img energize-red " style="display: none;">
+                        <img src="./img/home/zhishichanquan-hover.svg">
+                    </div>		
+                </span>
+            </div>
+
+        </div>
+        
+        <div class="row mb20p">
+            <div class="square-con" id="text-item1" target="energize-item1" tag="triangle-item1">
+                <span class="energize-text">
+                    <div class="energize-explain">
+                        <p>稳定支持业务</p>
+                    </div>	
+                </span>
+            </div>
+            
+            <div class="square-con" id="text-item2" target="energize-item2" tag="triangle-item2">
+                <span class="energize-text">
+                    <div class="energize-explain active">
+                        <p>高效经营设备</p>
+                    </div>	
+                </span>
+            </div>
+
+            <div class="square-con" id="text-item3" target="energize-item3" tag="triangle-item3">
+                <span class="energize-text">
+                    <div class="energize-explain">
+                        <p>基于数据决策</p>
+                    </div>	
+                </span>
+            </div>
+
+            <div class="square-con" id="text-item4" target="energize-item4" tag="triangle-item4">
+                <span class="energize-text">
+                    <div class="energize-explain">
+                        <p>演进合作机构</p>
+                    </div>	
+                </span>
+            </div>
+
+            <div class="square-con" id="text-item5" target="energize-item5" tag="triangle-item5">
+                <span class="energize-text">
+                    <div class="energize-explain">
+                        <p>自主知识产权</p>
+                    </div>	
+                </span>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="square-item triangle-item" id="triangle-item1">
+                <span class="energize-triangle">
+                    <div class="square-triangle active"></div>	
+                </span>
+            </div>
+            
+            <div class="square-item triangle-item" id="triangle-item2">
+                <span class="energize-triangle">
+                    <div class="square-triangle"></div>	
+                </span>
+            </div>
+
+            <div class="square-item triangle-item" id="triangle-item3">
+                <span class="energize-triangle">
+                    <div class="square-triangle"></div>	
+                </span>
+            </div>
+
+            <div class="square-item triangle-item" id="triangle-item4">
+                <span class="energize-triangle">
+                    <div class="square-triangle"></div>	
+                </span>
+            </div>
+
+            <div class="square-item triangle-item" id="triangle-item5">
+                <span class="energize-triangle">
+                    <div class="square-triangle"></div>	
+                </span>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col s12 energize-item" id="energize-item1" style="display: block;">
+                <div class="energize-content">
+                    <p>
+                        随着物联网的应用，企业品牌不再仅仅只与硬件本身质量相关，还包括设备联网运行的稳定安全及提供内容、服务的品质优异。
+                        AbleCloud向客户保障的不仅仅是当下物联网业务的稳定运行，也支持客户长远对业务的持续优化和创新。
+                        满足客户在物联网时代所需的所有可能的业务发展需要。
+                    </p>
+                </div>
+            </div>
+            <div class="col s12 energize-item" id="energize-item2" style="display: none;">
+                <div class="energize-content">
+                    <p>
+                        使用传统设备运营方式需要耗费大量的人力、物力成本，工作繁琐且效率低下。
+                        AbleCloud提供可视化设备运营管理工具，以及在物联网领域长久积累的设备运营解决方案。
+                        为传统制造企业带来全新的设备经营之道。
+                    </p>
+                </div>
+            </div>
+            <div class="col s12 energize-item" id="energize-item3" style="display: none;">
+                <div class="energize-content">
+                    <p>
+                        对于传统制造企业，以往业务方向主要来自市场调研，调研范围有限、结果输出周期长、决策风险不可控、生产延后性大……
+                        而AbleCloud会带给客户基于数据的、充分的、实时的结论和预测，让决策有据可依，让决策效果可见。
+                        大数据作为企业的核心资产，将深刻引领企业创新和进步。
+                    </p>
+                </div>
+            </div>
+            <div class="col s12 energize-item" id="energize-item4" style="display: none;">
+                <div class="energize-content">
+                    <p>
+                        物联网技术的引入将会对企业合作与服务关系带来深刻变革，新的合作结构也将产生如物联网金融、UBI车险等新的商机。AbleCloud支持企业内部部门之间、企业与供应链之间、企业与经销商之间等多方的高效协作和数据共享。物联化、信息化、智能化将更进一步发挥跨行业的创新力，更好的合作实现更大的共赢。
+                    </p>
+                </div>
+            </div>
+            <div class="col s12 energize-item " id="energize-item5" style="display: none;">
+                <div class="energize-content">
+                    <p>
+                        随着越来越多传统制造企业使用物联网技术，将涌现一大波创新技术与方案，企业的方法和经验需要及时进行知识产权的保护。
+                        AbleCloud赋能客户进行业务探索与落地的同时充分保障客户数据的所有权。
+                        安全可靠是客户放心使用的前提。
+                    </p>
+                </div>
+            </div>
+            <div class="col l1 m1 -on-med-and-down"></div>
+            
+        </div>
+        
+    </div>
+</section>
+<!--页面底部折叠栏-->
+<section class="solution">
+<div class="iot-bg" style="background-image: url(./img/home/car-iot.jpg);">
+    <div class="row1 iot-row container">
+        <div class="col l4 s12">
+            <ol class="industry-selector-ol">
+                <li item="img/car-iot.jpg" target="iot-1" class="">
+                    <a>
+                        <div class="row">
+                            <div class="col s4">
+                                <div class="button iot-box-circle">
+                                    <img src="./img/home/car-iot-icon.svg" class="iot-box-img">
+                                </div>
+                            </div>
+                            <div class="col s8">
+                                <hgroup class="hgroup-wrapper">
+                                    <h2 class="heading h5">车联网</h2>
+                                </hgroup>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li item="img/home-iot.jpg" target="iot-2">
+                    <a>
+                        <div class="row">
+                            <div class="col s4">
+                                <div class="button iot-box-circle">
+                                    <img src="./img/home/home-iot-icon.svg" class="iot-box-img">
+                                </div>
+                            </div>
+                            <div class="col s8">
+                                <hgroup class="hgroup-wrapper">
+                                    <h2 class="heading h5">智能家居</h2>
+                                </hgroup>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li item="img/health-IoT.jpg" target="iot-3" class="">
+                    <a>
+                        <div class="row">
+                            <div class="col s4">
+                                <div class="button iot-box-circle">
+                                    <img src="./img/home/health-iot-icon.svg" class="iot-box-img">
+                                </div>
+                            </div>
+                            <div class="col s8">
+                                <hgroup class="hgroup-wrapper">
+                                    <h2 class="heading h5">医疗健康</h2>
+                                </hgroup>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li item="img/industry-IoT.jpg" target="iot-4" class="active">
+                    <a>
+                        <div class="row">
+                            <div class="col s4">
+                                <div class="button iot-box-circle">
+                                    <img src="./img/home/industry-iot-icon.svg" class="iot-box-img">
+                                </div>
+                            </div>
+                            <div class="col s8">
+                                <hgroup class="hgroup-wrapper">
+                                    <h2 class="heading h5">工业物联网</h2>
+                                </hgroup>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ol>
+        </div>
+
+
+        <div class="col l8 s12">
+            <h2 class="solution-h2">提供一站式物联网解决方案</h2>
+            <div class="iot-left-con" style="display: none;" id="iot-1">
+                <div class="main-content">
+                    <div class="content-padding">
+                        <p class="iot-title">车联网解决方案</p>
+                        <p class="iot-content">客户通过安装车载定位终端，获取汽车的定位信息，搭配云端强大的定位分析相关功能模块，为客户带来丰富的场景化定位应用，满足金融风控、车辆轨迹分析、寻车找车等行业需求。</p>
+                        <a href="#" class="btn link-2-more-con"><span class="link-2-more" title="更多车联网接入AbleCloud物联网云平台服务客户案例">更多客户案例</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="iot-left-con" id="iot-2" style="display: none;">
+                <div class="main-content">
+                    <div class="content-padding">
+                        <p class="iot-title">智能家居解决方案</p>
+                        <p class="iot-content">客户可实现各种Wi-Fi家电类设备、网关安防类设备、娱乐教育类设备的联网智能化，支持用户远程控制互动和企业后台管理监控，也可搭配商城、论坛、维保、影音内容等强运营功能，还可配合云端机器学习实现设备的智能化运行，真正为用户带来精彩智能生活、为企业带来全新增长机遇。</p>
+                        <a href="home-iot.html" class="btn link-2-more-con"><span class="link-2-more" title="更多智能家居接入AbleCloud物联网云平台服务客户案例">更多客户案例</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="iot-left-con" id="iot-3" style="display: none;">
+                <div class="main-content">
+                    <div class="content-padding">
+                        <p class="iot-title">医疗健康解决方案</p>
+                        <p class="iot-content">客户可实现智能血糖仪、智能血压仪等医疗器械和智能手环、智能秤等运动设备的联网智能化，无论是采用蓝牙或是采用GPRS／3G，都可轻松将采集的用户运动健康数据上报并存储，不仅可以基于数据为用户提供个性化的指导服务，还可与其它健康机构实现数据与服务打通，形成完整的价值生态闭环。</p>
+                        <a href="health-iot.html" class="btn link-2-more-con"><span class="link-2-more" title="更多医疗健康接入AbleCloud物联网云平台服务客户案例">更多客户案例</span></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="iot-left-con" id="iot-4" style="display: block;">
+                <div class="main-content">
+                    <div class="content-padding">
+                        <p class="iot-title">工业物联网解决方案</p>
+                        <p class="iot-content">客户可实现诸如制冷机、压缩机等传统工业机械及工厂生产线的远程管理和智能化运行，实时掌握设备运行状态、远程调试设备运行参数、及时接收故障预警和报警、通过大数据分析进行诊断与调优；并可结合行业专家经验与机器学习能力，进而实现设备高效价值产出、减少故障发生时长。</p>
+                        <a href="industry-iot.html" class="btn link-2-more-con"><span class="link-2-more" title="更多工业物联网接入AbleCloud物联网云平台服务客户案例">更多客户案例</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+
+
+</div>
+</section>
+<footer id="foot1" style="width:100%;">    
+<script>
+    function createXhr(){
+            var xhr=null;
+            if(window.XMLHttpRequest){
+                var xhr=new XMLHttpRequest;
+                return xhr;
+            }else{
+                var xhr=new ActiveXObject("Microsoft.XMLHttp");
+            }
+            return xhr;
+        }
+        xhr=createXhr();
+    xhr.onreadystatechange=function(){
+        if(xhr.readyState==4 && xhr.status==200){
+            var res=xhr.responseText;
+            document.getElementById("foot1").innerHTML=res
+        }
+    }
+      xhr.open("get","foot.html",true)
+      xhr.send(null)
+</script>
+</footer>
+</body>
+     
+</html>
