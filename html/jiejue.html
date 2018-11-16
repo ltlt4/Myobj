@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/obj.css">
+</head>
+<body>
+    <header>
+        <!--顶部导航栏-->
+        <nav style="background:url(./img/home/chelian.jpg);background-size: cover;background-position: center center;background-repeat: no-repeat;width:100%;height:500px">
+        <!--导航栏-->
+        <div class="nav-container-justify navbar-fixed" id="navbar_bg">
+                        <div class="navbar-bg f-left">
+                            <a href="" class="f-left"><img src="img/home/home_01.svg" alt="" id="nvabar_img"></a>
+                        </div>
+                        <div class="navbar-nb f-left">
+                            <ul class="list-none">
+                                <li class="active navbar-nb-li"><a href="#" style="color:#e8e7e8">首页</a></li>
+                                <li class="navbar-d navbar-nb-li" id="navbar_li1" onmousemove=getOm() onmouseout=getOs() style="color:#D23634">产品<span
+                                        class="arr">&#9660</span>
+                                    <ul class="list-none navbar-ul">
+                                        <li><a href="#">Matrix设备接入及应用开发平台</a></li>
+                                        <li><a href="#">Genius设备管理及业务运营平台</a></li>
+                                        <li><a href="#">Inspire大数据分析及应用平台</a></li>
+                                    </ul>
+                                </li>
+                                <li class="navbar-d navbar-nb-li2" id="navbar_li2" onmousemove=getOm2() onmouseout=getOs2()>解决方案<span
+                                        class="arr">&#9660</span>
+                                    <ul class="list-none navbar-ul">
+                                        <li><a href="#">智云车联云解决方案</a></li>
+                                        <li><a href="#">消费级物联网云解决方案</a></li>
+                                        <li><a href="#">工业级物联网云解决方案</a></li>
+                                    </ul>
+                                </li>
+                                <li class="navbar-d2 navbar-nb-li2" id="navbar_li3" onmousemove=getOm3() onmouseout=getOs3()>客户案例<span
+                                        class="arr">&#9660</span>
+                                    <ul class="list-none navbar-ul">
+                                        <li><a href="#">车联网</a></li>
+                                        <li><a href="#">智能家居</a></li>
+                                        <li><a href="#">医疗健康</a></li>
+                                        <li><a href="#">工业物联网</a></li>
+                                    </ul>
+                                </li>
+                                <li class="navbar-d2 navbar-nb-li" id="navbar_li4" onmousemove=getOm4() onmouseout=getOs4()>合作伙伴</li>
+                                <li class="navbar-d2 navbar-nb-li2" id="navbar_li5" onmousemove=getOm5() onmouseout=getOs5()>关于我们<span
+                                        class="arr">&#9660</span>
+                                    <ul class="list-none navbar-ul">
+                                        <li><a href="">公司介绍</a></li>
+                                        <li><a href="">企业荣誉</a></li>
+                                        <li><a href="">人才招聘</a></li>
+                                        <li><a href="">新闻报道</a></li>
+                                        <li><a href="">联系我们</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="f-right navbar-lg">
+                            <ul class="list-none">
+                                <li>
+                                    <a href="#" class="lg-a">
+                                        <img src="img/home/home_login.svg" alt="">
+                                        <span id="navbar_span1">登录平台</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="navbar-lg-a">
+                                        申请试用
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+        </div>
+        <!--小页面导航栏-->
+        <div class="nav-wrapper navbar-fixed" id="navwra_bg">
+                        <a href="#" class="nav-wrapper-a1"><img src="img/home/home_01.svg" alt="" id="navwra_img"></a>
+                        <a href="#" class="nav-wrapper-a2 f-left" style="cursor:default" onclick="setOn()">
+                            <img src="img/home/home_04.png" alt="" class="nav-wrapper-img" id="navwra_img2">
+                        </a>
+        </div>
+        <!--左侧导航栏-->
+        <div class="navbar-left" id="navbarLeft">
+                    <ul class="list-none">
+                        <li class="navbar-left-li">
+                            <a href="#" class="navbar-left-a">首页</a>
+                        </li>
+                        <li>
+                            <ul>
+                                <li>
+                                    <a href="#" onclick="onNav()" class="navbar-left-a navbar-left-li" ">产品</a>
+                                    <div id="navbar_left1 " style="height:0px " class="navbar-left-div ">
+                                        <ul>
+                                            <li><a href=" ">Matrix设备接入及应用开发平台</a></li>
+                                            <li><a href=" ">Genius设备管理及业务运营平台</a></li>
+                                            <li><a href=" ">Inspire大数据分析及应用平台</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul>
+                                <li>
+                                    <a href="# " class="navbar-left-a " onclick="onNav2() ">解决方案</a>
+                                    <div id="navbar_left2 " style="height:0px " class="navbar-left-div ">
+                                        <ul>
+                                            <li><a href="# ">智云车联云解决方案</a></li>
+                                            <li><a href="http://www.ablecloud.com/smarthome.html ">消费级物联网云解决方案</a></li>
+                                            <li><a href="http://www.ablecloud.com/iiot.html ">工业级物联网云解决方案</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul>
+                                <li><a href="# " class="navbar-left-a " onclick="onNav3() ">客户案例</a></li>
+                                <div id="navbar_left3 " style="height:0px " class="navbar-left-div ">
+                                    <ul>
+                                        <li><a href=" ">车联网</a></li>
+                                        <li><a href=" ">智能家居</a></li>
+                                        <li><a href=" ">医疗健康</a></li>
+                                        <li><a href=" ">工业物联网</a></li>
+                                    </ul>
+                                </div>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="# " class="navbar-left-a ">合作伙伴</a>
+                        </li>
+                        <li>
+                            <ul>
+                                <li><a href="# " class="navbar-left-a " onclick="onNav4() ">关于我们</a></li>
+                                <div id="navbar_left4 " style="height:0px " class="navbar-left-div ">
+                                    <ul>
+                                        <li><a href="# ">公司介绍</a></li>
+                                        <li><a href="# ">企业荣誉</a></li>
+                                        <li><a href="# ">新闻报道</a></li>
+                                        <li><a href="# ">人才招聘</a></li>
+                                    </ul>
+                                </div>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="# " class="navbar-left-a ">申请试用</a>
+                        </li>
+                    </ul>
+        </div>
+        <div class="customer-case-iot-div">
+            <p class="bannerTitle">智云车联云解决方案</p>
+            <p class="bannerLine"></p>
+            <p class="bannerLiner">智云车联云服务平台通过将车载定位终端接入云端，依托于AbleCloud强大的物联网接入及大数据分析技术，并接入百度、谷歌等高精度地图，实现了对汽车资产的精准监控及风险预警，助力车主及汽车金融行业把控汽车动产金融风险。</p>
+        </div>
+     </header>
+     <section>
+         <div class="container matrix-imgbg-con ">
+            <h2 class="">解决方案架构</h2>
+            <img src="./img/home/chelianjiagou.svg" alt="">
+         </div>
+     </section>
+     <section class="iot-con-area">
+           <div class="container home-iot-con">
+                 <div class="row">
+                     <div class="col m12 s12 respond">
+                         <h2 class="panel-title">适用场景</h2>
+                         <div>
+                             <ul class="list-none">
+                                        <li class="col l4 s12" style="padding: 2px 2px 0 2px;">
+                                            <img class="responsive-img" src="./img/home/car1.jpg" alt="">
+                                            <div class="dask" style="width: 426px; height: 318px; line-height: 318px; text-align: center; top: -100%; opacity: 0;">
+                                                抵押贷款
+                                            </div>
+                                        </li>
+                                        <li class="col l4 s12" style="padding: 2px 2px 0 2px;">
+                                            <img class="responsive-img" src="./img/home/car2.jpg" alt="">
+                                            <div class="dask" style="width: 426px; height: 318px; line-height: 318px; text-align: center; top: -100%; opacity: 0;">
+                                                汽车按揭
+                                            </div>
+                                        </li>
+                                        <li class="col l4 s12" style="padding: 2px 2px 0 2px;">
+                                            <img class="responsive-img" src="./img/home/car3.jpg" alt="">
+                                            <div class="dask" style="width: 426px; height: 318px; line-height: 318px; text-align: center; top: -100%; opacity: 0;">
+                                                融资租赁
+                                            </div>
+                                        </li>
+                                        <li class="col l4 s12" style="padding: 2px 2px 0 2px;">
+                                            <img class="responsive-img" src="./img/home/car4.jpg" alt="">
+                                            <div class="dask" style="width: 426px; height: 318px; line-height: 318px; text-align: center; top: -100%; opacity: 0;">
+                                                资产担保
+                                            </div>
+                                        </li>
+                                        <li class="col l4 s12" style="padding: 2px 2px 0 2px;">
+                                            <img class="responsive-img" src="./img/home/car5.jpg" alt="">
+                                            <div class="dask" style="width: 426px; height: 318px; line-height: 318px; text-align: center; top: -100%; opacity: 0;">
+                                                分时租赁
+                                            </div>
+                                        </li>
+                                        <li class="col l4 s12" style="padding: 2px 2px 0 2px;">
+                                            <img class="responsive-img" src="./img/home/car6.jpg" alt="">
+                                            <div class="dask" style="width: 426px; height: 318px; line-height: 318px; text-align: center; top: -100%; opacity: 0;">
+                                                盗抢保障
+                                            </div>
+                                        </li>
+                                        
+                                 </ul>
+                         </div>
+                     </div>
+                 </div>
+           </div>
+     </section>
+     <footer id="foot1">
+            <script>
+                    function createXhr(){
+                            var xhr=null;
+                            if(window.XMLHttpRequest){
+                                var xhr=new XMLHttpRequest;
+                                return xhr;
+                            }else{
+                                var xhr=new ActiveXObject("Microsoft.XMLHttp");
+                            }
+                            return xhr;
+                        }
+                        xhr=createXhr();
+                    xhr.onreadystatechange=function(){
+                        if(xhr.readyState==4 && xhr.status==200){
+                            var res=xhr.responseText;
+                            document.getElementById("foot1").innerHTML=res
+                        }
+                    }
+                      xhr.open("get","foot.html",true)
+                      xhr.send(null)
+                </script>
+    </footer>
+
+<script src="js/jquery-1.11.3.js"></script>
+<script src="./js/navbar.js"></script>
+<script>
+    var $Div=$(".respond")
+    var lis=$Div[0].getElementsByTagName("li")
+    for(var key of lis){
+        key.onmouseover=function(){
+            var key=this
+            key.lastElementChild.style.top="2px"
+            key.lastElementChild.style.opacity="0.8"
+        }
+    }
+    
+    for(var key of lis){
+        key.onmouseout=function(){
+            var key=this
+            key.lastElementChild.style.top="-100%"
+            key.lastElementChild.style.opacity="0"
+        }
+    }
+</script>
+</body>
+</html>
