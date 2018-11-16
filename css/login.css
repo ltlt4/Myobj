@@ -1,0 +1,151 @@
+*{  margin: 0px;
+    padding: 0px;
+    font-family: -apple-system,BlinkMacSystemFont,"SF Pro SC","SF Pro Text","Helvetica Neue",Helvetica,"PingFang SC","Segoe UI",Roboto,"Hiragino Sans GB",'arial','microsoft yahei ui',"Microsoft YaHei",SimSun,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: normal;
+    box-sizing: border-box;
+}
+.center{
+    text-align: center;
+}
+.lg-secbg{
+    width: 100%;
+    height: 1070px;
+    background: url("../img/home/regist01.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.secbg-div{
+    height: 1070px;
+}
+.container{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin: 0 auto;
+    max-width: 1280px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+}
+@media screen and (min-width:200px) and (max-width:992px){
+    .container{
+        width: 85%
+    }
+}
+@media screen and (max-width:992px){
+    .container{
+        width: 70%
+    }
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.container .row {
+    margin-left: -0.75rem;
+    margin-right: -0.75rem;
+}
+.login-con-area-box {
+    margin-top: 100px;
+}
+img{
+    width: 274px;
+}
+.logo-bottom-text {
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 50px;
+}
+.login-content {
+    border: 1px solid #CCC;
+    max-width: 520px;
+    min-height: 500px;
+    margin: 0 auto;
+}
+form {
+    display: block;
+    margin-top: 0em;
+}
+.resitBox input {
+    width: 100%;
+    height: 44px;
+    box-sizing: border-box;
+    padding-left: 12px;
+    border: #d3d3d3 1px solid;
+    transition: border 0.5s linear;
+    outline:medium;
+    box-sizing: inherit;
+}
+#name,#phone,#mail,#company,#pwd{
+    margin-bottom: 10px;
+}
+.errorBox {
+    margin-bottom: 12px;
+    position: relative;
+    height: 16px;
+    text-align: left;
+    padding-left: 25px;
+    color: #ff0000;
+    font-size: 14px;
+    background-repeat: no-repeat;
+    background-image: url(../img/home/error.png);
+}
+input::-webkit-input-placeholder {
+    color: #bababa; 
+    font-size:14px ;
+}
+.box-s{
+    border-bottom:2px solid #26a69a !important;
+}
+textarea::-webkit-input-placeholder {
+    color: #bababa; 
+    font-size:14px ;
+}
+textarea {
+    width: 100%;
+    overflow: auto;
+    margin: 0;
+}
+.intbot{
+    background-color:#d23634; font-size:18px; color:#ffffff; margin-top:10px;margin-bottom:20px; height:50px; font-size:18px;border:none; width:100%;cursor: pointer;
+    padding-left:0
+}
+/*模态框*/
+.modal-bg{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 1070px;
+    text-align: center;
+    z-index: 990;
+    background: #333;
+    opacity: 0.7;
+    display: none;
+}
+.modal-bg-data{
+    width: 400px;
+    height: 300px;
+    background: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -200px;
+    margin-top: -150px;
+    z-index: 1000;
+    text-align: center;
+    border-radius: 2px;
+    display: none;
+}
+.modal-p{
+    font-size: 40px;
+    font-weight: normal;
+    color: #333;
+    display:block;
+    margin-top: 40px;
+}
