@@ -1,3 +1,4 @@
+
 (function(){
     var Imgs=document.getElementById("i4")
     var smalls=document.getElementsByClassName("energize-item");
